@@ -1,10 +1,13 @@
+import { getPokemon } from "./generics/getPokemon";
 
 
-console.log('Hola Mundo!');
-
-
-
-
-
-
-
+getPokemon(800)
+.then(
+  response => {
+    console.log(response);
+  }
+).catch(
+  error => {
+    console.log(error);
+  }
+);
